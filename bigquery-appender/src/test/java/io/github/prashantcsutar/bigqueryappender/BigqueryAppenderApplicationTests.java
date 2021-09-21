@@ -1,4 +1,4 @@
-package com.github.prashantcsutar.bigqueryappender;
+package io.github.prashantcsutar.bigqueryappender;
 
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
@@ -7,13 +7,12 @@ import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.slf4j.LoggerFactory;
 
-import com.github.prashantcsutar.appender.BigQueryAppender;
-import com.github.prashantcsutar.appender.conf.BigQueryAppenderConfigurations;
-
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.LoggerContext;
 import ch.qos.logback.classic.spi.ILoggingEvent;
+import io.github.prashantcsutar.appender.BigQueryAppender;
+import io.github.prashantcsutar.appender.conf.BigQueryAppenderConfigurations;
 
 class BigqueryAppenderTests {
     @Test

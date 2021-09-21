@@ -1,4 +1,4 @@
-package com.github.prashantcsutar.appender.api;
+package io.github.prashantcsutar.appender.api;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -10,7 +10,6 @@ import java.util.Objects;
 
 import org.slf4j.LoggerFactory;
 
-import com.github.prashantcsutar.appender.conf.BigQueryAppenderConfigurations;
 import com.google.api.client.util.DateTime;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.auth.oauth2.ServiceAccountCredentials;
@@ -25,6 +24,7 @@ import com.google.cloud.bigquery.TableId;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.encoder.Encoder;
+import io.github.prashantcsutar.appender.conf.BigQueryAppenderConfigurations;
 
 /**
  * BigQuery APIs

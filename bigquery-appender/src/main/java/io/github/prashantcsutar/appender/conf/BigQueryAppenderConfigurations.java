@@ -1,4 +1,4 @@
-package com.github.prashantcsutar.appender.conf;
+package io.github.prashantcsutar.appender.conf;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

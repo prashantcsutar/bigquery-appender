@@ -1,4 +1,4 @@
-package com.github.prashantcsutar.appender.api;
+package io.github.prashantcsutar.appender.api;
 
 /**
  * This class defines all constants

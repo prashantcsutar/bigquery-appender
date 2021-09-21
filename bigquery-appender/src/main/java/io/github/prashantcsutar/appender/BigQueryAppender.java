@@ -1,12 +1,11 @@
-package com.github.prashantcsutar.appender;
-
-import com.github.prashantcsutar.appender.api.BigQueryAppenderApi;
-import com.github.prashantcsutar.appender.conf.BigQueryAppenderConfigurations;
+package io.github.prashantcsutar.appender;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.AppenderBase;
 import ch.qos.logback.core.encoder.Encoder;
 import ch.qos.logback.core.status.ErrorStatus;
+import io.github.prashantcsutar.appender.api.BigQueryAppenderApi;
+import io.github.prashantcsutar.appender.conf.BigQueryAppenderConfigurations;
 import lombok.Getter;
 import lombok.Setter;
 

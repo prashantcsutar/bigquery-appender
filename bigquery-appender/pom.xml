@@ -3,41 +3,46 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.github.prashantcsutar</groupId>
+    <groupId>io.github.prashantcsutar</groupId>
     <artifactId>bigquery-appender</artifactId>
-    <version>1.0</version>
+    <version>0.0.1</version>
     <name>bigquery-appender</name>
     <description>BigQuery appender for logback</description>
     <properties>
         <java.version>1.8</java.version>
+        <logback-classic-version>1.2.3</logback-classic-version>
+        <google-cloud-bigquery-version>1.116.6</google-cloud-bigquery-version>
+        <junit-jupiter-version>5.4.0</junit-jupiter-version>
+        <mockito-all-version>1.9.5</mockito-all-version>
+        <lombok-version>1.18.20</lombok-version>
     </properties>
     <dependencies>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>1.2.3</version>
+            <version>${logback-classic-version}</version>
         </dependency>
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-bigquery</artifactId>
-            <version>1.116.6</version>
+            <version>${google-cloud-bigquery-version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.4.0</version>
+            <version>${junit-jupiter-version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
-            <version>1.9.5</version>
+            <version>${mockito-all-version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>${lombok-version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -46,8 +51,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
             <plugin>
